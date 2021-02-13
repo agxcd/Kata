@@ -4,10 +4,8 @@ const multiplicationTable = function (maxValue) {
   for (let i = 1; i <= maxValue; i++) {
     for (let j = 1; j <= maxValue; j++) {
       table += i * j + " ";
-      if (j === maxValue) {
-        table += "\n";
-      }
     }
+    table += "\n";
   }
   return table;
 };
